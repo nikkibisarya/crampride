@@ -1,0 +1,31 @@
+#upload-file{
+  display:none;
+}
+.glyphicon{
+  font-size:4em
+}
+#container{
+  margin:8em
+}
+body {
+  text-align: center;
+  font-family: "Caslon";
+  background: white;
+  font-size: 30px;
+}
+
+.btn {
+  padding: 12px;
+  width: 200px;
+  height: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.btn-primary {
+  color: white;
+  background: black;
+  border-radius: 100px;
+}
