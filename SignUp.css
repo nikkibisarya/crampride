@@ -1,0 +1,156 @@
+
+html, body {
+  height: 100%;
+}
+
+body {
+	background-size: cover;
+  backgroudn: white;
+  font-family: 'Caslon';
+  text-align: center;
+}
+
+#page-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  #modal-wrapper {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+#modal {
+  margin: 0 auto;
+  box-shadow: 0px $modal-shadow-offset $modal-shadow-blur rgba($modal-shadow-color,$modal-shadow-opacity), inset 0 0 1px rgba($modal-shadow-color, $modal-inner-shadow-opacity);;
+  max-width: $modal-width;
+  background: $emptiness;
+}
+
+.box {
+  @include primary-gradient;
+	padding: 40px;
+  text-align: center;
+  position: relative;
+  .box-header {
+    font-size: 1.75em;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    margin: 0 0 36px;
+  }
+	svg {
+		fill: white;
+	}
+}
+
+button.proceed {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  postion: center;
+  padding: 20px 0;
+  color: $emptiness;
+  @include button-gradient;
+  border: 0;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Caslon';
+  cursor: pointer;
+  i {
+    font-size: .8em;
+  }
+}
+
+#login-form {
+  right: 50%;
+  padding: 20px;
+  input {
+    border: 1px solid #ddd;
+    color: $sea-showing-green;
+  }
+  label {
+    color: $lucky-sevens;
+  }
+}
+
+#register-form {
+  input {
+    border: 1px solid $emptiness;
+    color: $emptiness - #111;
+  }
+  label {
+    color: $emptiness;
+  }
+}
+
+label {
+  display: block;
+  text-align: center;
+  margin: 20px 0 6px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Caslon';
+  &:first-child {
+		margin-top: 0;
+	}
+  .tip {
+    float: right;
+		font-size: 20px;
+		text-decoration: underline;
+		cursor: pointer;
+		color: #3B8686;
+		font-weight: bold;
+  }
+}
+
+input {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 10px;
+  font-family: 'Caslon';
+  font-size: 1em;
+  background: transparent;
+  font-weight: bold;
+}
+
+#toggle-tabs {
+  display: table;
+  width: 100%;
+  .tab {
+    font-size: 1em;
+    display: table-cell;
+    width: 50%;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    &#toggle-login {
+      color: $sea-showing-green;
+    }
+    &#toggle-register {
+      color: $emptiness;
+      background: $sea-showing-green;
+    }
+  }
+}
+
+#branding-small {
+  position: absolute;
+  top: 36px; right: 36px;
+  svg {
+		fill: white;
+	}
+}
+.box__brand {
+  z-index: 2;
+  right: 90%;
+  font-family: 'Caslon';
+  font-size: 75px;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+}

@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="SignUp.css"/>
 </head>
-
-<body>
-
-<form action="upload_page.html">
-  Enter a username:<br>
-  <input type="text" name="Username" value="">
-  <br>
-  Create a password:<br>
-  <input type="text" name="Password" value="">
-  <br><br>
-  <input type="submit" value="Submit">
-</form>
-
-</body>
-</html>
+<h1 class="box__brand">Sign Up</h1>
+<div id="page-wrapper">
+      <div id="modal-wrapper">
+        <div id="modal">
+          <div id="cards">
+            <div class="card" id="login">
+              <div class="box">
+              </div>
+              <form id="login-form">
+                <label>Enter a Username:
+                </label>
+                <input type="text" id="login-email" class="textbox">
+                <label>Create a Password:
+                </label>
+                <input type="password" id="login-password" class="textbox">
+              </form>
+              <form action="upload_page.html">
+              <button type="submit" class="proceed">Log-in to your account <i class="ion-ios-arrow-thin-right"></i></button>
+                 </form>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </html>

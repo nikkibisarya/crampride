@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+  background: #d6d3cf;
+  font-family: 'Caslon';
+  font-weight: 300;
+  smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 1800px;
+  height: 600px;
+  min-height: 1000px;
+  background: black;
+  border-radius: 5px;
+}
+.box--bg {
+  background: white;
+  width: 1500px;
+}
+.box-left {
+  position: relative;
+  width: 500px;
+}
+.box-right {
+  padding-left: 65px;
+  width: 1200px;
+}
+.box__bg {
+  position: absolute;
+  border-radius: 5px;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+.box__brand {
+  position: absolute;
+  z-index: 2;
+  top: 15%;
+  left: 15%;
+  right: 20%;
+  text-align: center;
+  font-family: "Caslon";
+  font-size: 100px;
+  color: white;
+  text-transform: uppercase;
+}
+.box__login {
+  position: relative;
+  top: 36px;
+  right: 30px;
+  font-size: 40px;
+  text-align: right;
+  background: black;
+  text-decoration: none;
+}
+.box__login-button {
+  margin-left: 10px;
+  height: 1px;
+}
+.box__content {
+  position: relative;
+  top: 126px;
+  padding: 16px;
+}
+.box__title {
+  margin-bottom: 70px;
+  font-size: 50px;
+  line-height: 50px;
+  text-rendering: optimizeLegibility;
+}
+.box__caption {
+  margin-bottom: 20px;
+  font-family: 'Caslon';
+  font-size: 25px;
+  font-smoothing: antialiased;
+  line-height: 18px;
+  text-rendering: optimizeLegibility;
+}
+
+.button {
+  padding: 12px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  align-self: center;
+  right: 50%;
+}
+.button__primary {
+  background: black;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  right: 50%;
+}
+.button--circle {
+  padding: 10px 10px;
+  border-radius: 50%;
+  line-height: 0;
+  align: center;
+}
+
+.copy {
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+.copy strong {
+  color: #536291;
+}
+.copy a {
+  text-decoration: none;
+  color: #536291;
+}

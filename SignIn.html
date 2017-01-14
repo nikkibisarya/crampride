@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="SignUp.css"/>
 </head>
-<body>
+<h1 class="box__brand">Log In</h1>
 
-<form action="upload_page.html">
-  Username:<br>
-  <input type="text" name="Username" value="">
-  <br>
-  Password:<br>
-  <input type="password" name="Password" value="">
-  <br><br>
-  <input type="submit" value="Submit">
+<div id="page-wrapper">
+      <div id="modal-wrapper">
+        <div id="modal">
+          <div id="cards">
+            <div class="card" id="login">
+              <div class="box">
+              </div>
+              <form id="login-form">
+                <label>Enter your Username:
+                </label>
+                <input type="text" id="login-email" class="textbox">
+                <label>Enter your Password:
+                </label>
+                <input type="password" id="login-password" class="textbox">
+              </form>
+              <form action="upload_page.html">
+              <button type="submit" class="proceed">Log-in to your account <i class="ion-ios-arrow-thin-right"></i></button>
+                 </form>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
   <script>
     $.post('/api/user/signin', {
       'user': Username,
