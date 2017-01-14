@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<form action="upload_page.html">
+  Username:<br>
+  <input type="text" name="Username" value="">
+  <br>
+  Password:<br>
+  <input type="password" name="Password" value="">
+  <br><br>
+  <input type="submit" value="Submit">
+  <script>
+    $.post('/api/user/signin', {
+      'user': Username,
+      'pass': Password
+    },
+    function(data, status) {
+      var res = data.json();
+      if (res.success) {
+
+      }
+      else {
+        <p>Error. Invalid username and/or password.</p>
+      }
+    })
+  </script>
+</form>
+
+
+</body>
+</html>
