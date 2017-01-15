@@ -1,0 +1,15 @@
+
+  var newFolder = ['Create New Folder','hello', 'hi'];
+for(var i = 0; i < newFolder.length; i++)
+{
+  $("#menu-content").append("<li id=folder"+i+">"+newFolder[i]+"</li>");
+  if(files.length > 0)
+  {
+    $("#folder"+i).append("<ul class='sub-menu collapse'>");
+    for(j = 0 ; j < files.length; j++)
+    {
+      $("#folder"+i).append("<li id=folder"+i+">"+files[j]+"</li>");
+    }
+    $("#folder"+i).append("</ul>");
+  }
+}

@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+  </head>
+
+  <body>
+    <div id="hideMe"><input type="text" id="userInput" />
+        <a href="NIKKI.html"><input id='add-btn' type="submit" value="Add" onclick="addFolder()" /></a>
+    </div>
+    <button id='create-btn' onclick="toggle_visibility('hideMe')"> New Folder </button>
+
+    <script>
+
+    function toggle_visibility(id)
+    {
+        var e = document.getElementById(id);
+        if (e.style.display == 'block' || e.style.display=='')
+        {
+            e.style.display = 'none';
+        }
+        else
+        {
+            e.style.display = 'block';
+        }
+    }
+
+    function addFolder()
+    {
+      var newFolder = []
+      newFolder.push()
+    }
+
+    </script>
+    <div id="hideMe"><input type="text" id="userInput" />
+      <input id='add-btn' type="submit" value="Add" onclick="addFolder()" />
+    </div>
+
+
+
+
+    <script>
+
+
+
+
+
+      var newFolder = ['Create New Folder','hello', 'hii']
+
+      $(document).ready(function () {
+        $("#add-btn").click(function () {
+          var userInput = $("#userInput").val();
+          newFolder.push(userInput);
+          updateList();
+        });
+
+        toggle_visibility('hideMe')
+        updateList();
+      });
+
+      function updateList() {
+        $("#menu-content").html("");
+        for (step = 0; step < newFolder.length; step++) {
+          $("#menu-content").append('<li><a href="' + newFolder[step] + '">' + newFolder[step] + '</a></li>');
+        }
+      }
+    </script>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+  </head>
+
+  <body>
+
+  <div id="hideMe"><input type="text" id="userInput" />
+      <a><input id='add-btn' type="submit" value="Add" onclick="addFolder()" /></a>
+  </div>
+
+  <p>Which folder would you like to save this in?:</p>
+  <div class="dropdown">
+  <a<button id = "drop" class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+<a <button id = "file_info" href="NIKKI.html" class="dropbtn">Dropdown</button><input onClick = "addFile()"></a>>
+<script>
+    for(i=1; i <= newFolder.length; i++)
+    {
+        $("#file_info").append("<li id=file_info"+i+">"+newFolder[i]+"</li>");
+    }
+    </script>
+  </div>
+  </div>
+<script>
+  function fileToFilename() {
+  var input = document.getElementById('filename'),
+      filename = input.value;
+  if (filename) {
+      files[folder] = [filename];
+  } else {
+      alert('Please enter a filename!');
+      input.focus();
+  }}
+</script>
+</body>
+</html>

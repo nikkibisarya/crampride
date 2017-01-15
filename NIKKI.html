@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+
+    <script>
+    $( document ).ready(function() {
+      var files = {"Pics":["apple", "banana"]};
+      for(folder in files)
+      {
+        $("#menu-content").append("<li> id="folder" "+folder+"</li>");
+          for (file in files[folder])
+          {
+            if(files[folder])
+            {
+              $("#folder"+i).append("<ul class='sub-menu collapse'>");
+            }
+          }
+      }
+    });
+    </script>
+  </head>
+<div class="nav-side-menu">
+    <div class="brand">Cram Pride!</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+        <div class="menu-list">
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                  <a href="#">
+                  <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                  </a>
+                </li>
+            </ul>
+     </div>
+</div>
+</body>
+</html>
